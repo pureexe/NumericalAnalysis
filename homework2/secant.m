@@ -14,6 +14,4 @@ function x2 = secant(f,x0,x1,tol)
         x0 = x1;
         x1 = x2;
     end
-    disp("VALUE");
-    disp(x2-x1);
 end

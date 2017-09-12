@@ -1,9 +1,9 @@
-function x = newton_raphson(symsF,tol)    
+function x = newton_raphson(symsF,init,tol)    
     diffF = diff(symsF);
-    x = 1;
+    x = init;
     prev  = 0;
     count = 0;
-    disp('Iteration       x        f(x)        d(x)');
+    disp("Iteration       x        f(x)        f'(x)");
     disp('=========    =======    =======    =======');
     while abs(prev - x) > tol && x ~= 0
         prev = x;
