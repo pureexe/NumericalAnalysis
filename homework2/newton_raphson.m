@@ -5,6 +5,7 @@ function x = newton_raphson(symsF,init,tol)
     count = 0;
     disp("Iteration       x        f(x)        f'(x)");
     disp('=========    =======    =======    =======');
+    % nneed to check f(x) = 0
     while abs(prev - x) > tol && x ~= 0
         prev = x;
         fx = subs(symsF);
