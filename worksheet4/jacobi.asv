@@ -1,0 +1,25 @@
+function result = jacobi(A,B,tol,X0)
+    count = 0;
+    N = length(B);
+    while(count < 100)
+        for i = 1:N
+            X(i) = B(i) - ();
+        end
+        error = jacobi_norm(X-X0);
+        fprintf("%.6f\t%.6f",count,error);
+        if(error < tol)
+            break;
+        end;
+        X0 = X
+    end
+    result = X
+end
+function max = jacobi_norm(matrix)
+    max = -1;
+    for i:matrix(,1)
+        if(abs(i)>max)
+            max = abs(i);
+        end
+    end
+    
+end

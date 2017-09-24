@@ -1,8 +1,0 @@
-function root = secant(f,x0,x1,tol)
-    if nargin == 3
-        tol = 0.00000001;
-    end
-    while true
-        error = 
-    end
-end
