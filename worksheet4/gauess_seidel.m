@@ -27,7 +27,7 @@ function max = jacobi_norm(matrix)
         end
     end
 end
-function sum = jacobi_sum(A,X0,i)
+function s  um = jacobi_sum(A,X0,i)
     len = length(X0);
     sum = 0;
     for j = 1:len
